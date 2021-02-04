@@ -1,0 +1,23 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:lightgray;
+    #container{
+     height: 600px;
+     widows: 400px;
+     background-color:#000;
+
+     #ball{
+         height:50px;
+         width:50px;
+         background-color:red;
+     }
+    }
+}

@@ -1,0 +1,33 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: lightgray;
+}
+
+body #container {
+  height: 600px;
+  widows: 400px;
+  background-color: #000;
+}
+
+body #container #ball {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */
