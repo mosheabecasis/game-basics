@@ -17,7 +17,7 @@ let right = false;
 const init = ()=>{
    gameTime = setInterval(status, 1000/60);
    status();
-   checkLimit(); 
+   //checkLimit(); 
 }
 
 const status = ()=>{
@@ -36,10 +36,9 @@ const status = ()=>{
 }
 
 $button.addEventListener('click',init);
-$body.addEventListener("keydown", keyDown);
-$body.addEventListener("keyup", keyUp);
 
 const keyDown = (event)=>{
+    console.log(event);
     //up
     if (event.keyCode == 38) {
         up = true;
@@ -79,3 +78,5 @@ const keyUp = (event)=>{
         right = false;
     }
 }
+$body.addEventListener("keydown", keyDown);
+$body.addEventListener("keyup", keyUp);
