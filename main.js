@@ -3,8 +3,8 @@ const $ball = document.getElementById('ball');
 const $body = document.getElementById('body');
 const $button = document.getElementById('button');
 
-let x = $ball.style.left;
-let y = $ball.style.top;
+//let x = $ball.style.left;
+//let y = $ball.style.top;
 let radius = 50;
 let speed = 10;
 let gameTime;
@@ -22,20 +22,22 @@ const init = ()=>{
 
 const status = ()=>{
     if (up) {
-        y -= speed;
+        $ball.style.top -= speed;
     }
     if (down) {
-        y += speed;
+        $ball.style.top += speed;
     }
     if (left) {
-        x -= speed;
+        $ball.style.left -= speed;
     }
     if (right) {
-        x += speed;
+        $ball.style.left += speed;
     } 
 }
 
-$button.addEventListener('click',init);
+//$button.addEventListener('click',init);
+$body.addEventListener("keydown", keyDown);
+$body.addEventListener("keyup", keyUp);
 
 const keyDown = (event)=>{
     console.log(event);
@@ -78,5 +80,4 @@ const keyUp = (event)=>{
         right = false;
     }
 }
-$body.addEventListener("keydown", keyDown);
-$body.addEventListener("keyup", keyUp);
+init();

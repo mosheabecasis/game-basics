@@ -18,12 +18,16 @@ body{
      height: 400px;
      width: 400px;
      background-color:#000;
-
+     overflow: hidden;
+     position: relative;
      #ball{
          height:50px;
          width:50px;
          background-color:red;
          border-radius:100vw;
+         position: absolute;
+         top: 0;
+         left:0;
      }
     }
 }
