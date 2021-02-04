@@ -6,7 +6,7 @@ const $button = document.getElementById('button');
 let x = $ball.style.left;
 let y = $ball.style.top;
 let radius = 50;
-let speed = 100;
+let speed = 10;
 let gameTime;
 
 let up = false;
@@ -15,7 +15,7 @@ let left = false;
 let right = false;
 
 const init = ()=>{
-   gameTime = setInterval(init, 1000/60);
+   gameTime = setInterval(status, 1000/60);
    status();
    checkLimit(); 
 }
@@ -59,7 +59,7 @@ const keyDown = (event)=>{
         right = true;
     }
 }
-const keyUp = ()=>{
+const keyUp = (event)=>{
     //up
     if (event.keyCode == 38) {
         up = false;
