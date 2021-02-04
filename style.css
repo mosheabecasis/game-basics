@@ -28,6 +28,8 @@ body #container {
   height: 400px;
   width: 400px;
   background-color: #000;
+  overflow: hidden;
+  position: relative;
 }
 
 body #container #ball {
@@ -35,5 +37,8 @@ body #container #ball {
   width: 50px;
   background-color: red;
   border-radius: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */

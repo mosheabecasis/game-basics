@@ -15,8 +15,8 @@ let left = false;
 let right = false;
 
 const init = ()=>{
-   gameTime = setInterval(status, 1000/60);
-   status();
+   gameTime = setTimeout(status, 1000);
+  //status();
    //checkLimit(); 
 }
 
@@ -34,10 +34,6 @@ const status = ()=>{
         $ball.style.left += speed;
     } 
 }
-
-//$button.addEventListener('click',init);
-$body.addEventListener("keydown", keyDown);
-$body.addEventListener("keyup", keyUp);
 
 const keyDown = (event)=>{
     console.log(event);
@@ -80,4 +76,6 @@ const keyUp = (event)=>{
         right = false;
     }
 }
-init();
+$button.addEventListener('click', init);
+$body.addEventListener("keydown", keyDown);
+$body.addEventListener("keyup", keyUp);
