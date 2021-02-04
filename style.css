@@ -19,9 +19,14 @@ body {
   background-color: lightgray;
 }
 
+body #button {
+  height: 50px;
+  width: 50px;
+}
+
 body #container {
-  height: 600px;
-  widows: 400px;
+  height: 400px;
+  width: 400px;
   background-color: #000;
 }
 
@@ -29,5 +34,6 @@ body #container #ball {
   height: 50px;
   width: 50px;
   background-color: red;
+  border-radius: 100vw;
 }
 /*# sourceMappingURL=style.css.map */
