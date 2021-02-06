@@ -10,10 +10,9 @@ body{
     justify-content:center;
     flex-direction: column;
     background-color:lightgray;
-    //position: relative;
     #button{
         height:50px;
-        width:50px;
+        width:100px;
     }
     #container{
      height: 400px;
@@ -26,8 +25,7 @@ body{
          width:50px;
          background-color:red;
          border-radius:100vw;
-         //position: absolute;
-         
+          
      }
     }
 }

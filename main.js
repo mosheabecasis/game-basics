@@ -3,7 +3,6 @@ const $ball = document.getElementById('ball');
 const $body = document.getElementById('body');
 const $button = document.getElementById('button');
 
- 
 let radius = 50;
 let speed = 10;
 //let gameTime;
