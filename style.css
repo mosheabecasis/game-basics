@@ -1,7 +1,6 @@
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
   padding: 0;
 }
 
@@ -21,11 +20,19 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: lightgray;
+  cursor: pointer;
 }
 
 body #button {
   height: 50px;
   width: 100px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -5px, rgba(0, 0, 0, 0.04) 0px 6px 6px 4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -5px, rgba(0, 0, 0, 0.04) 0px 6px 6px 4px;
+  -webkit-transition: -webkit-box-shadow 0.5s linear;
+  transition: -webkit-box-shadow 0.5s linear;
+  transition: box-shadow 0.5s linear;
+  transition: box-shadow 0.5s linear, -webkit-box-shadow 0.5s linear;
+  outline: none;
 }
 
 body #container {

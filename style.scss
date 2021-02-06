@@ -1,6 +1,6 @@
 *,*::before,*::after{
     box-sizing: border-box;
-    margin: 0;
+    //margin: 0;
     padding: 0;
 }
 body{
@@ -10,9 +10,14 @@ body{
     justify-content:center;
     flex-direction: column;
     background-color:lightgray;
+    cursor: pointer;
     #button{
         height:50px;
         width:100px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -5px,
+                    rgba(0, 0, 0, 0.04) 0px 6px 6px 4px;
+        transition: box-shadow 0.5s linear;
+        outline: none;
     }
     #container{
      height: 400px;

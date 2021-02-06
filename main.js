@@ -14,7 +14,7 @@ $button.addEventListener('click', () => {
     $ball.style.left = 0;
     $ball.style.top = 0;
     //setInterval(borderCheck, 500);
-    
+    $button.innerHTML = 'reset';
 });
 
 $body.addEventListener('keydown', ($event) => {
