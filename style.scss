@@ -8,8 +8,9 @@ body{
     display: flex;
     align-items: center;
     justify-content:center;
+    flex-direction: column;
     background-color:lightgray;
-
+    //position: relative;
     #button{
         height:50px;
         width:50px;
@@ -25,9 +26,8 @@ body{
          width:50px;
          background-color:red;
          border-radius:100vw;
-         position: absolute;
-        //top: 100px;
-         //left:100px;
+         //position: absolute;
+         
      }
     }
 }
