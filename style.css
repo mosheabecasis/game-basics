@@ -35,6 +35,8 @@ body #button {
   transition: box-shadow 0.5s linear, -webkit-box-shadow 0.5s linear;
   outline: none;
   border-radius: 8px;
+  cursor: pointer;
+  font-size: 25px;
 }
 
 body #button:hover {
@@ -53,6 +55,7 @@ body #container {
   background-color: #000;
   overflow: hidden;
   position: relative;
+  margin-top: 10px;
 }
 
 body #container #ball {
