@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 *,*::before,*::after{
     box-sizing: border-box;
     //margin: 0;
-    padding: 0;
+    //padding: 0;
 }
 body{
     height: 100%;
@@ -10,6 +12,7 @@ body{
     justify-content:center;
     flex-direction: column;
     background-color:lightgray;
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
     #button{
         height:50px;
@@ -28,7 +31,7 @@ body{
      #ball{
          height:50px;
          width:50px;
-         background-color:red;
+        // background-color:#fff;
          border-radius:100vw;
           
      }
