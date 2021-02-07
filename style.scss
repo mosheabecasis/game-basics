@@ -21,7 +21,15 @@ body{
                     rgba(0, 0, 0, 0.04) 0px 6px 6px 4px;
         transition: box-shadow 0.5s linear;
         outline: none;
+        border-radius: 8px;
+        &:hover{
+            box-shadow:none;
+        }
+        &:active{
+            transform: scale(.8);
+        }
     }
+    
     #container{
      height: 400px;
      width: 400px;
