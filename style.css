@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0;
 }
 
 body {
@@ -20,6 +20,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: lightgray;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
 }
 
@@ -33,6 +34,17 @@ body #button {
   transition: box-shadow 0.5s linear;
   transition: box-shadow 0.5s linear, -webkit-box-shadow 0.5s linear;
   outline: none;
+  border-radius: 8px;
+}
+
+body #button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body #button:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 body #container {
@@ -46,7 +58,6 @@ body #container {
 body #container #ball {
   height: 50px;
   width: 50px;
-  background-color: red;
   border-radius: 100vw;
 }
 /*# sourceMappingURL=style.css.map */
